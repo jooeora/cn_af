@@ -8,9 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "naive-ui": "^2.27.0",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "weixin-js-sdk": "^1.6.0"
   },
   "devDependencies": {
     "@vicons/ionicons5": "^0.12.0",

@@ -274,7 +274,6 @@ export default defineComponent({
     const box = ref(null)
     onMounted(() => {
       nextTick(() => {
-        console.log(12313123, box.value)
         const x = window.innerWidth / 1680
         if (window.innerWidth > 500) {
           box.value.style.transform = `scale(${x})`
@@ -345,7 +344,6 @@ export default defineComponent({
         <n-dropdown
           class="btn base"
           :options="options"
-          trigger="click"
           placement="bottom-start"
           @select="handleSelect"
           size="large"
@@ -360,7 +358,6 @@ export default defineComponent({
           class="btn"
           v-for="item in buttons"
           :options="item.options"
-          trigger="click"
           placement="bottom-start"
           @select="handleSelect"
           size="large"
