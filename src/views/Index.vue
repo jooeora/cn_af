@@ -205,7 +205,7 @@ const buttons = [
         href: 'http://www.decxagri.com/Warehouse/Warehouse.html'
       },
       {
-        label: '信息发布，撮合系统',
+        label: '数字管理',
         key: '2.2',
         href: 'http://www.decxagri.com/Manager/Manager.html'
       },
@@ -213,7 +213,8 @@ const buttons = [
       { label: '经纪人系统', key: '2.4', href: '' },
       { label: '追溯系统', key: '2.5', href: 'http://www.decxagri.com/caosu/index.html' },
       { label: '遥感系统', key: '2.6', href: '' },
-      { label: '客户管理系统', key: '2.7', href: 'http://www.decxagri.com/Crm/index.html' }
+      { label: '客户管理系统', key: '2.7', href: 'http://www.decxagri.com/Crm/index.html' },
+      { label: '撮合系统', key: '2.8', href: 'http://www.decxagri.com/Deposit/index.html' }
     ]
   },
   {
@@ -226,12 +227,13 @@ const buttons = [
         key: '3.1',
         href: 'http://www.decxagri.com/Warehouse/Warehouse.html'
       },
-      { label: '信息发布，撮合系统', key: '3.2', href: '' },
+      { label: '数字管理', key: '3.2', href: 'http://www.decxagri.com/Manager/Manager.html' },
       { label: '供应链金融系统', key: '3.3', href: '' },
       { label: '经纪人系统', key: '3.4', href: '' },
       { label: '追溯系统', key: '3.5', href: 'http://www.decxagri.com/caosu/index.html' },
       { label: '遥感系统', key: '3.6', href: '' },
-      { label: '客户管理系统', key: '3.7', href: 'http://www.decxagri.com/Crm/index.html' }
+      { label: '客户管理系统', key: '3.7', href: 'http://www.decxagri.com/Crm/index.html' },
+      { label: '撮合系统', key: '3.8', href: 'http://www.decxagri.com/Deposit/index.html' }
     ]
   },
   {
