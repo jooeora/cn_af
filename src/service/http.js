@@ -1,7 +1,7 @@
 //http.ts
 import axios, { AxiosRequestConfig } from 'axios'
 import NProgress from 'nprogress'
-import qs from 'qs'
+// import qs from 'qs'
 
 // 设置请求头和请求路径
 
@@ -14,7 +14,7 @@ axios.interceptors.request.use(
       //@ts-ignore
       config.headers.token = token
     }
-    config.data = qs.stringify(JSON.parse(config.data))
+    // config.data = qs.stringify(JSON.parse(config.data))
     return config
   },
   error => {

@@ -40,29 +40,22 @@ export default defineConfig({
     open: true,
     https: false,
     proxy: {
-      // '/': {
-      //   target: 'http://cib.aglook.net/api.php',
-      //   changeOrigin: true,
-      //   configure: (proxy, options) => {
-      //     // proxy 是 'http-proxy' 的实例
-      //   }
-      // }
+      '/api.php': {
+        target: 'http://www.decxagri.com/api.php',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')
+      }
     }
   },
+
   // 生产环境打包配置
-  //去除 console debugger
+  // 去除 console debugger
   build: {
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true
       }
-    }
-  },
-
-  define: {
-    'process.env': {
-      VUE_APP_BASE_API: 'http://cib.aglook.net/api.php'
     }
   }
 })
