@@ -221,7 +221,7 @@ const buttons = [
     label: '中非大宗矿产平台',
     // href: 'http://hunan.decxgroup.com/',
     options: [
-      { label: '大宗交易平台', key: '3.0', href: 'http://hunan.decxgroup.com/' },
+      { label: '大宗交易平台', key: '3.0', href: 'http://hainan.decxgroup.com/' },
       {
         label: '智能仓储系统',
         key: '3.1',
@@ -359,6 +359,7 @@ export default defineComponent({
         <n-dropdown
           class="btn"
           v-for="item in buttons"
+          :key="item.key"
           :options="item.options"
           placement="bottom-start"
           @select="handleSelect"
@@ -378,7 +379,9 @@ export default defineComponent({
           role="dialog"
           aria-modal="true"
         >
-          <div v-for="item in currVal.message" class="message">{{ item }}</div>
+          <div v-for="(item, index) in currVal.message" :key="index" class="message">
+            {{ item }}
+          </div>
         </n-card>
       </n-modal>
     </main>
