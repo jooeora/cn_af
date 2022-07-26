@@ -239,7 +239,7 @@ const buttons = [
   {
     label: '其它运营合作平台',
     options: [
-      { label: '其他产品平台(比如水产)', key: '4.1', href: '' },
+      { label: '其他产品平台(比如热带水果)', key: '4.1', href: '' },
       { label: '公共物流服务平台(比如八百里)', key: '4.2', href: '' }
     ]
   },
