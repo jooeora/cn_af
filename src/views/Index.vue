@@ -240,7 +240,10 @@ const buttons = [
     label: '其它运营合作平台',
     options: [
       { label: '其他产品平台(比如热带水果)', key: '4.1', href: '' },
-      { label: '公共物流服务平台(比如八百里)', key: '4.2', href: '' }
+      { label: '公共物流服务平台', key: '4.2', href: '' },
+      { label: '深海鱼业平台', key: '4.3', href: '' },
+      { label: '南繁育种平台', key: '4.4', href: '' },
+      { label: '热带水果平台', key: '4.5', href: '' }
     ]
   },
 
@@ -341,7 +344,7 @@ export default defineComponent({
 <template>
   <div class="bg">
     <main ref="box">
-      <div class="title">中非数字化平台</div>
+      <div class="title">海南国际贸易数字化平台</div>
       <div class="btns">
         <n-dropdown
           class="btn base"
@@ -451,12 +454,12 @@ export default defineComponent({
     }
     .title {
       text-align: center;
-      font-size: 36px;
+      font-size: 28px;
       padding: 0;
       color: #333;
       text-shadow: 2px 2px 0 #fff;
-      margin-bottom: 20px;
-      margin-top: 20px;
+      margin-bottom: 40px;
+      margin-top: 40px;
     }
   }
   .btns {
